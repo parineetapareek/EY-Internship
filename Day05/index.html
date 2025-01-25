@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    function convertToMile() {
+      var kms = document.getElementById("km").value;
+      console.log(kms);
+      var miles = kms * 0.621371;
+      console.log("Kilometers to miles: " + miles);
+      document.getElementById('resmiles').innerText = "Miles value is: " + miles;
+    }
+
+    function convertToFahrenheit() {
+      var degs = document.getElementById("deg").value;
+      console.log(degs);
+      var fahrenheit = (degs * 9) / 5 + 32;
+      console.log("Degrees to Fahrenheit: " + fahrenheit);
+      document.getElementById('resfahrenheit').innerText = "Fahrenheit value is: " + fahrenheit;
+    }
+
+    function convertToPound() {
+      var p = document.getElementById("kg").value;
+      console.log(p);
+      var pound = p * 2.20462;
+      console.log("Kg to pound: " + pound);
+      document.getElementById('respound').innerText = "Pound value is: " + pound;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Sasta Converter</h1>
+  <h3>KM to Miles</h3>
+  <form>
+    <label for="km">Enter K.M: </label>
+    <input type="number" id="km" />
+    <button type="button" value="Convert to Miles" onclick="convertToMile()">
+      Convert to Miles
+    </button>
+    <h4 id="resmiles"></h4>
+    </h4>
+  </form>
+
+  <h3>Degree to Fahrenheit</h3>
+  <form>
+    <label for="deg">Enter Degree: </label>
+    <input type="number" id="deg" />
+    <button type="button" value="Convert to Fahrenheit" onclick="convertToFahrenheit()">
+      Convert to Fahrenheit
+    </button>
+    <h4 id="resfahrenheit"></h4>
+    </h4>
+  </form>
+
+  <h3>KG to Pound</h3>
+  <form>
+    <label for="kg">Enter K.G: </label>
+    <input type="number" id="kg" />
+    <button type="button" value="Convert to Pound" onclick="convertToPound()">
+      Convert to Pound
+    </button>
+    <h4 id="respound"></h4>
+    </h4>
+  </form>
+</body>
+
+</html>

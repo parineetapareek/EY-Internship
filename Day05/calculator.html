@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function add() {
+        var a = parseInt(document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a+b;
+        console.log(c);
+        document.getElementById('res').innerText = "Addition is: "+c;
+      }
+
+      function sub() {
+        var a = parseInt(document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a-b;
+        console.log(c);
+        document.getElementById('res').innerText = "Subtraction is: "+c;
+      }
+
+      function mult() {
+        var a = parseInt(document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a*b;
+        console.log(c);
+        document.getElementById('res').innerText = "Multiplication is: "+c;
+      }
+
+      function div() {
+        var a = parseInt(document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a/b;
+        console.log(c);
+        document.getElementById('res').innerText = "Division is: "+c;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="num1">Enter Number1: </label>
+      <input type="number" id="num1" />
+      <br /><br />
+      <label for="num2">Enter Number2: </label>
+      <input type="number" id="num2" />
+      <br /><br />
+      <input type="button" value="Addition" onclick="add()"/>
+      <input type="button" value="Subtraction" onclick="sub()"/>
+      <input type="button" value="Multiplication" onclick="mult()"/>
+      <input type="button" value="Division" onclick="div()"/>
+    </form>
+    <h3 id="res"></h3>
+  </body>
+</html>

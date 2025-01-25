@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    width:200px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.orange{
+    background-color: orangered;
+    height: 50px;
+}
+
+.white{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.green{
+    background-color: rgb(33, 204, 33);
+    position: relative;
+    /* top:150px; */
+    height: 50px;
+}
+
+.img{
+    position: relative;
+    left: 200px;
+}
+
+.danda{
+    border-left: 5px solid black;
+    height: 250px;
+    margin-left: 100px;
+}

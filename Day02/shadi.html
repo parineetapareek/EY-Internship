@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>
+            Matrimonial Form
+        </h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="prefix">Prefix: </label>
+        <select name="prefix">
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+        </select>
+        <label for="name">Name: </label>
+        <input type="text" name="name" required/>
+        <br/><br/>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" required/>
+        <label for="Religion">Religion</label>
+        <select name="Religion">
+            <option>Hindu</option>
+            <option>Muslim</option>
+            <option>Christian</option>
+            <option>Sikh</option>
+            <option>Jew</option>
+        </select>
+        <br/><br/>
+        <fieldset>
+            <legend>Select your Gender</legend>
+            <label for="female">Female</label>
+            <input type="radio" name="female" value="female"/>
+            <label for="male">Male</label>
+            <input type="radio" name="male" value="male" />
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Select Languages</legend>
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" name="hindi"/>
+            <label for="english">English</label>
+            <input type="checkbox" name="english"/>
+            <label for="marathi">Marathi</label>
+            <input type="checkbox" name="marathi"/>
+            <label for="punjabi">Punjabi</label>
+            <input type="checkbox" name="punjabi"/>
+            <label for="tamil">Tamil</label>
+            <input type="checkbox" name="tamil"/>
+            <label for="telugu">Telugu</label>
+            <input type="checkbox" name="telugu"/>
+            <label for="gujrati">Gujrati</label>
+            <input type="checkbox" name="gujrati"/>
+        </fieldset>
+        <br/>
+        <label for="number">Enter your Phone Number: </label>
+        <input type="number" name="number"/>
+        <br/><br/>
+        
+        <label for="Qualification">Qualification: </label>
+        <input type="text" name="Qualification"/>
+        <br/><br/>
+        <label for="height">Height(in cm)</label>
+        <input type="number" name="height"/>
+        <br/><br/>
+        <label for="address">Address: </label>
+        <textarea name="address"></textarea>
+        <br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>What are you looking for in groom?</legend>
+            <label for="height">Height (in cm): </label>
+            <input type="number" name="height"/>
+            <br/><br/>
+            <label for="eduq">Educational Qualification: </label>
+            <input type="text" name="eduq"/>
+            <br/><br/>
+            <label for="Religion">Religion</label>
+            <select name="Religion">
+                <option>Hindu</option>
+                <option>Muslim</option>
+                <option>Christian</option>
+                <option>Sikh</option>
+                <option>Jew</option>
+            </select>
+            <br/><br/>
+        </fieldset>
+        <button name="Submit">Submit</button>
+    </form>
+</body>
+</html>
