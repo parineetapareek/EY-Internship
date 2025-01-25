@@ -1,11 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 import Movie from "./model/movie.model.js";
 
 const app = express();
 const port = 3000;
 
 app.use(express.json());
+app.use(cors());
 
 mongoose
   .connect("mongodb://localhost:27017/EY")

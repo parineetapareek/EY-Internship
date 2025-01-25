@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function Component1() {
   const [movieName, setMovieName] = useState("");
@@ -7,6 +8,23 @@ function Component1() {
   const [release, setRelease] = useState("");
   const [rating, setRating] = useState("");
   const [genre, setGenre] = useState("");
+
+  const postMovie = async () => {
+    try {
+      const movieData = await axios.post("http://localhost:3000/addMovie", {
+        name: movieName,
+        hero: heroName,
+        heroine: heroineName,
+        release: release,
+        rating: rating,
+        genre: genre,
+      });
+      alert("Data saved successfully");
+      console.log(movieData.data);
+    } catch (error) {
+      console.log("Post data failed");
+    }
+  };
 
   return (
     <>
@@ -55,7 +73,7 @@ function Component1() {
             onChange={(e) => setGenre(e.target.value)}
           />
           <br />
-          <button>Submit</button>
+          <button onClick={postMovie}>Submit</button>
         </form>
       </div>
     </>
